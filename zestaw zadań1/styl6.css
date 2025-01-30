@@ -1,0 +1,74 @@
+:root {
+    --color1: #042940;  
+    --color2: #005C53;  
+    --color3: #9FC131;  
+    --color4: #DBF227;  
+    --color5: #D6D58E;  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color1);  
+    color: whitesmoke;  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.kontener-karuzeli {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid var(--color5);  
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.karuzela {
+    display: flex;
+    width: max-content; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.zdjęcie {
+    min-width: 100%;
+    text-align: center;
+    background-color: var(--color2); 
+    color: #fff;
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+img {
+    width: 50%; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.kontrola-karuzeli {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.guzik {
+    background-color: var(--color4);  
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.guzik:hover {
+    background-color: var(--color3); 
+}

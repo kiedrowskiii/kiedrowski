@@ -1,0 +1,32 @@
+:root {
+    --color1: #042940; 
+    --color2: #005C53; 
+    --color3: #9FC131; 
+    --color4: #DBF227; 
+    --color5: #D6D58E; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color1); 
+    color: var(--color5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    color: var(--color3); 
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+canvas {
+    display: block;
+    border: 5px solid var(--color4); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}

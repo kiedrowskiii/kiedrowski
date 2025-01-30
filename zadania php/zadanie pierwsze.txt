@@ -1,0 +1,8 @@
+mam jakiś problem z apache więc po prostu wyślę kwerendy
+CREATE TABLE uczniowie_2c (
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    imie VARCHAR(50),                 
+    nazwisko VARCHAR(50),             
+    wiek INT,                         
+    ocena_roczna INT,        
+);

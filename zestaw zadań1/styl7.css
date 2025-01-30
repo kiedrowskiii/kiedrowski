@@ -1,0 +1,62 @@
+:root {
+    --color1: #042940;  
+    --color2: #005C53;  
+    --color3: #9FC131;  
+    --color4: #DBF227;  
+    --color5: #D6D58E; 
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.animacja {
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+
+    
+    animation: zmianaKoloru 5s infinite; 
+}
+
+
+@keyframes zmianaKoloru {
+    0% {
+        background-color: var(--color3); 
+    }
+    25% {
+        background-color: var(--color4);  
+    }
+    50% {
+        background-color: var(--color5);  
+    }
+    75% {
+        background-color: var(--color2);  
+    }
+    100% {
+        background-color: var(--color1);  
+    }
+}
+
+
+h1 {
+    color: var(--color4);
+}
+
+p {
+    color: var(--color5); 
+}

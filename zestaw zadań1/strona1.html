@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podstrona 1</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+    <main>
+        <h1>Kalkulator podatku</h1>
+        <p>wprowadz kwote a obliczy netto i brutto czy cos</p>
+
+        <form id="kalkulator-podatkowy">
+            <label for="kwota">Kwota:</label>
+            <input type="number" id="kwota" placeholder="Wprowadź kwotę" required>
+            
+            <label for="stawka-podatku">Stawka podatku w procentach:</label>
+            <input type="number" id="stawka-podatku" placeholder="Procent podatku" required>
+
+            <button type="button">Oblicz</button>
+        </form>
+
+        <h2>Wyniki:</h2>
+        <p>Kwota netto: <span id="kwota-netto">0</span> PLN</p>
+        <p>Kwota brutto: <span id="kwota-brutto">0</span> PLN</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>podstrona2</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <main>
+        <h1>Kalkulator Prowizyjny</h1>
+        <p>wprowadz marze i wartosc sprzedazy i wyliczysz ile zarobil sprzedawca</p>
+
+        <form id="kalkulator-prowizji">
+            <label for="wartosc-sprzedazy">Wartość sprzedaży (PLN):</label>
+            <input type="number" id="wartosc-sprzedazy" placeholder="Kwota" required>
+
+            <label for="marza">Marża (%):</label>
+            <input type="number" id="marza" placeholder="Wysokość marży" required>
+
+            <button type="button" onclick="obliczProwizje()">Oblicz</button>
+        </form>
+        <br>
+        <h2>Wyniki:</h2>
+        <p>kasa dla sprzedawcy: <span id="kwota-sprzedawcy">0</span> PLN</p>
+    </main>
+</body>
+</html>

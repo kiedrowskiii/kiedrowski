@@ -1,0 +1,65 @@
+
+:root {
+    --color1: #042940; 
+    --color2: #005C53; 
+    --color3: #9FC131;
+    --color4: #DBF227; 
+    --color5: #D6D58E; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color1); 
+    margin: 0;
+    padding: 0;
+    color: var(--color2); 
+    text-align: center;
+}
+
+header {
+    background-color: var(--color3); 
+    color: white;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    background-color: var(--color1); 
+    padding: 20px;
+    border: 1px solid var(--color5); 
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 8px black;
+}
+
+form label, form input, form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form input, form button {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--color4); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--color2); 
+}
